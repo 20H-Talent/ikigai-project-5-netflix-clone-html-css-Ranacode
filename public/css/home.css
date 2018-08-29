@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
   background-color: #141414;
+  font-family: Helvetica, Arial, serif;
 }
 
 .Netflix__Header {
@@ -63,9 +66,62 @@ body {
 
 .Netflix__Search {
   display: flex;
+  position: relative;
+  margin-right: 59px;
 }
-.Netflix__Search i.fa-search {
+.Netflix__Search img {
   color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 7px 0 7.85px 5.9px;
+}
+
+.Netflix__Search--form input[type="search"] {
+  outline: none;
+  border: 1px solid white;
+  background: #1d1c1d;
+  color: white;
+  height: 34px;
+  width: 268px;
+  line-height: 0;
+  padding-left: 30px;
+}
+
+.Netflix__Search--form input[type="search"]::-webkit-input-placeholder {
+  color: #7f7f7f;
+  padding: 8px 150px 8px 0;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+}
+
+.Netflix__Search--form input[type="search"]::-moz-placeholder {
+  color: #7f7f7f;
+  padding: 8px 150px 8px 0;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+}
+
+.Netflix__Search--form input[type="search"]::-ms-input-placeholder {
+  color: #7f7f7f;
+  padding: 8px 150px 8px 0;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
+}
+
+.Netflix__Search--form input[type="search"]:-moz-placeholder {
+  color: #7f7f7f;
+  padding: 8px 150px 8px 0;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  line-height: 18px;
 }
 
 @media screen and (min-width: 768px) {
