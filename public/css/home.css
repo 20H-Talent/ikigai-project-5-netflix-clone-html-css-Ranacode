@@ -80,12 +80,20 @@ body {
 .Netflix__Search--form input[type="search"] {
   outline: none;
   border: 1px solid white;
-  background: #1d1c1d;
   color: white;
   height: 34px;
-  width: 268px;
+  width: 0;
+  background: none;
+  border: none;
   line-height: 0;
   padding-left: 30px;
+  transition: width 0.4s ease;
+}
+
+.Netflix__Search--form input[type="search"]:focus {
+  width: 268px;
+  border: 1px solid white;
+  background: #1d1c1d;
 }
 
 .Netflix__Search--form input[type="search"]::-webkit-input-placeholder {
