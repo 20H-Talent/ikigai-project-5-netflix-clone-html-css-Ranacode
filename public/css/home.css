@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #141414;
+}
+
+.Netflix__Header {
+  height: 810.44px;
+  background-image: url("../assets/images/pelicula-inocents.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.Netflix__Navbar {
+  height: 68px;
+  max-height: 68px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Netflix__Navbar .Netflix__Menu--right {
+  display: flex;
+}
+
+.Netflix__Navbar .Netflix__Menu--right > img {
+  margin: 22px 0 21.14px 58px;
+}
+
+.Netflix__Menu--right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 45px;
+}
+
+.Netflix__Menu--right ul li {
+  max-height: 17px;
+}
+
+.Netflix__Menu--right ul li > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-right: 16px;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+}
+
+.Netflix__Menu--right ul > li > a.active {
+  font-weight: bold;
+}
+
+.Netflix__Search {
+  display: flex;
+}
+.Netflix__Search i.fa-search {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
