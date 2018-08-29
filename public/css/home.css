@@ -142,6 +142,35 @@ body {
   line-height: 18px;
 }
 
+.Netflix__Movie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 187.69px;
+}
+
+.Netflix__Movie .Netflix__Movie--information {
+  margin-left: 61px;
+  margin-bottom: 26px;
+  max-width: 485px;
+}
+.Netflix__Movie .Netflix__Movie--information img {
+}
+
+.Netflix__Movie--information .Netflix__Movie--buttons {
+  margin-left: 58px;
+  margin-bottom: 15px;
+}
+
+.Netflix__Movie--rating {
+  height: 32px;
+  width: 95px;
+  background-color: #252928;
+  border-left: 1px solid white;
+  align-self: flex-end;
+}
+
 @media screen and (min-width: 768px) {
 }
 
