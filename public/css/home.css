@@ -26,6 +26,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .Netflix__Navbar .Netflix__Menu--right {
@@ -98,6 +100,7 @@ body {
   width: 268px;
   border: 1px solid white;
   background: #1d1c1d;
+  font-family: Helvetica, Arial, serif;
 }
 
 .Netflix__Search--form input[type="search"]:focus {
@@ -142,6 +145,12 @@ body {
   line-height: 18px;
 }
 
+.Netflix__Search--form input[type="search"]::-webkit-search-decoration,
+.Netflix__Search--form input[type="search"]::-webkit-search-cancel-button,
+.Netflix__Search--form input[type="search"]::-webkit-search-results-button,
+.Netflix__Search--form input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 .Netflix__Movie {
   display: flex;
   flex-direction: row;
@@ -151,24 +160,88 @@ body {
 }
 
 .Netflix__Movie .Netflix__Movie--information {
-  margin-left: 61px;
+  margin-left: 58px;
   margin-bottom: 26px;
   max-width: 485px;
 }
 .Netflix__Movie .Netflix__Movie--information img {
+  margin-left: 3px;
 }
 
 .Netflix__Movie--information .Netflix__Movie--buttons {
-  margin-left: 58px;
   margin-bottom: 15px;
+  margin-top: 26px;
 }
 
+.Netflix__Movie--buttons button:first-child,
+.Netflix__Movie--buttons button:last-child {
+  border: none;
+  outline: none;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 41px;
+  width: 129px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 19px;
+  border-radius: 3px;
+  background-color: rgba(51, 51, 51, 0.4);
+  color: white;
+  text-align: center;
+}
+
+.Netflix__Movie--buttons button:last-child {
+  width: 154px;
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+.Netflix__Movie--buttons button:first-child img {
+  margin-right: 11.5px;
+}
+.Netflix__Movie--buttons button:last-child img {
+  margin-right: 10.4px;
+}
+
+.Netflix__Movie--information .Netflix__Movie__Description {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.Netflix__Movie--information .Netflix__Movie__Description > h3 {
+  margin-left: 1px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.22px;
+  line-height: 26px;
+  color: white;
+}
+
+.Netflix__Movie__Description > p {
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  line-height: 25px;
+  color: white;
+}
 .Netflix__Movie--rating {
+  font-family: Helvetica, Arial, sans-serif;
   height: 32px;
   width: 95px;
+  margin-bottom: 16px;
   background-color: #252928;
-  border-left: 1px solid white;
+  border-left: 3px solid white;
   align-self: flex-end;
+  color: white;
+}
+
+.Netflix__Movie--rating .Rating > span {
+  display: block;
+  height: 19px;
+  width: 28px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 19px;
+  margin: 7px 0 6px 13px;
 }
 
 @media screen and (min-width: 768px) {
