@@ -1,6 +1,6 @@
 | Task                     | Estimated (hours) | Task (hours) |
 | ------------------------ | :---------------: | ------------ |
-| Layout_Navbar            |         1         |              |
+| Layout_Navbar            |         1         | 1:30         |
 | Home_Header              |       1:30        |              |
 | Poster movie Slider      |         1         |              |
 | Thumbnail movie slider   |         1         |              |

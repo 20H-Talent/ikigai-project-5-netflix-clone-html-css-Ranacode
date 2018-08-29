@@ -88,6 +88,16 @@ body {
   line-height: 0;
   padding-left: 30px;
   transition: width 0.4s ease;
+  cursor: pointer;
+}
+
+.Netflix__Search img {
+  cursor: pointer;
+}
+.Netflix__Search img:focus + .Netflix__Search--form input[type="search"] {
+  width: 268px;
+  border: 1px solid white;
+  background: #1d1c1d;
 }
 
 .Netflix__Search--form input[type="search"]:focus {
