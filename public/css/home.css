@@ -263,11 +263,10 @@ body {
   line-height: 24px;
   margin-bottom: 11px;
 }
-.Netflix__Originals__Posters {
+.Netflix__Original__Posters,
+.Netflix__Thumbnail__Movies {
   overflow-x: auto;
   overflow-y: hidden;
-  max-height: 433px;
-  padding-left: 58px;
   display: flex;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -275,6 +274,18 @@ body {
   flex-wrap: nowrap;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.Netflix__Original__Posters {
+  max-height: 433px;
+  padding-left: 58px;
+  margin-bottom: 99px;
+}
+
+.Netflix__Thumbnail__Movies {
+  max-height: 132px;
+  height: 132px;
+  padding-left: 58px;
 }
 
 ::-webkit-scrollbar {
@@ -285,15 +296,19 @@ body {
   display: none;
 }
 
-.Netflix__Originals__Poster {
+.Netflix__Originals__Poster,
+.Netflix__Thumbnails__Movie {
   background-repeat: no-repeat;
-  height: 433px;
-  width: 217px;
   margin-right: 5px;
   flex: 0 0 auto;
   position: relative;
   color: white;
   transition: opacity 0.3s ease;
+}
+
+.Netflix__Originals__Poster {
+  height: 433px;
+  width: 217px;
 }
 
 .Netflix__Originals__Poster.Magic {
@@ -395,6 +410,38 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
+.Netflix__Thumbnails {
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+.Netflix__Thumbnails > h3 {
+  margin-left: 58px;
+  height: 24px;
+  width: 185px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+}
+.Netflix__Thumbnails__Movie {
+  height: 121.69px;
+  width: 216px;
+  background-size: 100%;
+  position: relative;
+}
+
+.Netflix__Thumbnails__Movie.Modern-Family {
+  background-image: url("../assets/movie-images/modern-family.jpg");
+}
+
+.Netflix__Thumbnail__Movie--progress {
+  display: block;
+  position: absolute;
+  bottom: -24px;
+}
+
 @media screen and (min-width: 768px) {
 }
 
