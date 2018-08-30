@@ -319,24 +319,82 @@ body {
   background: rgba(0, 0, 0, 1);
 }
 
+.Netflix__Poster--information {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  margin-left: 11px;
+  transition: opacity 0.3s ease;
+}
+
 .Netflix__Originals__Poster:hover .Poster__Overlay {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.Netflix__Poster--information {
-  position: absolute;
-  top: 50%;
-  z-index: 3;
+.Netflix__Originals__Poster:hover .Netflix__Poster--information {
+  opacity: 1;
 }
 
+.Netflix__Poster__Header > img {
+  cursor: pointer;
+  margin-left: 0.5px;
+}
 .Netflix__Poster__Header > p {
   height: 19px;
   width: 145px;
   font-size: 16px;
   letter-spacing: 1.2px;
   line-height: 19px;
+  margin-top: 7px;
 }
 
+.Netflix__Poster__Match {
+  margin-top: 7px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.Netflix__Poster__Match > span {
+  margin-right: 6px;
+}
+.Netflix__Poster__Match > span.Match {
+  color: #46d36a;
+  height: 17px;
+  color: #46d36a;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 17px;
+}
+
+.Netflix__Poster__Match > span.Rate {
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  margin-right: 7px;
+  padding-left: 4px;
+}
+
+.Netflix__Poster__Match > span.Rate > span {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  padding: 5x 4px;
+}
+
+.Netflix__Poster__Match > span.Duration {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+}
+
+.Netflix__Poster__Description {
+  margin-top: 8px;
+}
+
+.Netflix__Poster__Description > p {
+  height: 90px;
+  width: 195px;
+  font-size: 14px;
+  line-height: 18px;
+}
 @media screen and (min-width: 768px) {
 }
 
