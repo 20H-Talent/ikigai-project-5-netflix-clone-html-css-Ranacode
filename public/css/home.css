@@ -244,6 +244,71 @@ body {
   margin: 7px 0 6px 13px;
 }
 
+.Netflix__Originals {
+  font-family: Helvetica, Arial, sans-serif;
+  max-height: 468px;
+  margin-top: -198px;
+  z-index: 2;
+}
+
+.Netflix__Originals > h3 {
+  text-transform: uppercase;
+  height: 24px;
+  width: 203px;
+  margin-left: 58px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+.Netflix__Originals__Posters {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 433px;
+  padding-left: 58px;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar {
+  /*
+  width: 0px;
+  background: transparent;
+  */
+  display: none;
+}
+
+.Netflix__Originals__Poster {
+  background-repeat: no-repeat;
+  height: 433px;
+  width: 217px;
+  margin-right: 5px;
+  flex: 0 0 auto;
+}
+
+.Netflix__Originals__Poster.Magic {
+  background-image: url("../assets//movie-images/v-magic.jpg");
+}
+
+.Netflix__Originals__Poster.Big-Fish {
+  background-image: url("../assets//movie-images/v-big-fish.jpg");
+}
+
+.Netflix__Originals__Poster.Insatiable {
+  background-image: url("../assets//movie-images/v-insatiable.png");
+}
+
+.Netflix__Poster--information {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
 }
 
