@@ -436,10 +436,47 @@ body {
   background-image: url("../assets/movie-images/modern-family.jpg");
 }
 
+.Netflix__Thumbnails__Movie.Rick-Morty {
+  background-image: url("../assets/movie-images/rick-morty.jpg");
+}
+
+.Netflix__Thumbnails__Movie.Cosmos {
+  background-image: url("../assets/movie-images/cosmos.jpg");
+}
+
+.Netflix__Thumbnails__Movie.Magic {
+  background-image: url("../assets/movie-images/magic.jpg");
+}
+
 .Netflix__Thumbnail__Movie--progress {
   display: block;
   position: absolute;
-  bottom: -24px;
+  left: 0;
+  right: 0;
+  width: 63%;
+  margin: 0 auto;
+  bottom: -16px;
+}
+
+.Netflix__Thumbnail__Movie--progress progress,
+.Netflix__Thumbnail__Movie--progress progress[value] {
+  width: 132px;
+  height: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+.Netflix__Thumbnail__Movie--progress progress::-webkit-progress-bar {
+  background-color: #606060;
+}
+
+.Netflix__Thumbnail__Movie--progress progress::-webkit-progress-value {
+  background-color: #b3212c;
+}
+
+.Netflix__Thumbnail__Movie--progress progress::-moz-progress-bar {
+  background-color: #b3212c;
 }
 
 @media screen and (min-width: 768px) {
