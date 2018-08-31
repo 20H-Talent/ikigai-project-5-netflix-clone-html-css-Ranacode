@@ -508,6 +508,24 @@
 
 
     </main>
+
+    <script>
+        window.onscroll = function () { addBackgroundToNavbar() };
+
+        const header = document.querySelector(".Netflix__Header");
+        const sticky = header.offsetTop;
+        const navbar = header.querySelector('.Netflix__Navbar');
+        function addBackgroundToNavbar() {
+            console.log(sticky, window.pageYOffset)
+            console.log(window.pageYOffset > sticky);
+
+            if (window.pageYOffset > sticky) {
+                navbar.style.backgroundColor = "rgba(20,20,20,0.8)";
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        }
+    </script>
 </body>
 
 </html>
