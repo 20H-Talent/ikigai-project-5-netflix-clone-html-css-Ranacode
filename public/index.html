@@ -491,6 +491,25 @@
             <div class="Netflix__Thumbnail__Movies">
 
                 <div class="Netflix__Thumbnails__Movie Modern-Family">
+                    <div class="Netflix__Thumbnail--information">
+                        <div class="Netflix__Thumbnail__Header">
+                            <img src="assets/icons//btn-play.png" alt="btn-play">
+                            <p>Insatiable</p>
+                        </div>
+                        <div class="Netflix__Thumbnail__Match">
+                            <span class="Match">98% Match</span>
+                            <span class="Rate">
+                                <span>
+                                    13+
+                                </span>
+                            </span>
+                            <span class="Duration">1h 55m</span>
+                        </div>
+                        <div class="Netflix__Thumbnail__Description">
+                            <p>He's a broken man of science. And he's desperate.His last hope for a fix involves metaphysics
+                                and magic. Life is strange </p>
+                        </div>
+                    </div>
                     <div class="Netflix__Thumbnail__Movie--progress">
                         <progress max="100" value="15"></progress>
                     </div>
@@ -614,15 +633,9 @@
         const header = document.querySelector(".Netflix__Header");
         const sticky = header.offsetTop;
         const navbar = header.querySelector('.Netflix__Navbar');
-        function addBackgroundToNavbar() {
-            console.log(sticky, window.pageYOffset)
-            console.log(window.pageYOffset > sticky);
 
-            if (window.pageYOffset > sticky) {
-                navbar.style.backgroundColor = "rgba(20,20,20,0.8)";
-            } else {
-                navbar.style.backgroundColor = "transparent";
-            }
+        function addBackgroundToNavbar() {
+            navbar.style.backgroundColor = window.pageYOffset > sticky ? "rgba(20,20,20,0.9)" : "transparent";
         }
     </script>
 </body>

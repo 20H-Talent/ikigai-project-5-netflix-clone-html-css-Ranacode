@@ -323,7 +323,8 @@ body {
   background-image: url("../assets//movie-images/v-insatiable.png");
 }
 
-.Netflix__Originals__Poster:hover .Poster__Overlay {
+.Netflix__Originals__Poster:hover .Poster__Overlay,
+.Netflix__Thumbnails__Movie:hover .Poster__Overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -331,23 +332,23 @@ body {
   left: 0;
   z-index: 1;
   transition: background 0.3s ease-out;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.Netflix__Poster--information {
+.Netflix__Poster--information,
+.Netflix__Thumbnail--information {
   opacity: 0;
   position: absolute;
-  top: 50%;
   z-index: 2;
   margin-left: 11px;
   transition: opacity 0.3s ease;
 }
 
-.Netflix__Originals__Poster:hover .Poster__Overlay {
-  background: rgba(0, 0, 0, 0.6);
+.Netflix__Poster--information {
+  top: 50%;
 }
-
-.Netflix__Originals__Poster:hover .Netflix__Poster--information {
+.Netflix__Originals__Poster:hover .Netflix__Poster--information,
+.Netflix__Thumbnails__Movie:hover .Netflix__Thumbnail--information {
   opacity: 1;
 }
 
@@ -375,7 +376,6 @@ body {
 .Netflix__Poster__Match > span.Match {
   color: #46d36a;
   height: 17px;
-  color: #46d36a;
   font-size: 14px;
   letter-spacing: 0.4px;
   line-height: 17px;
@@ -446,6 +446,71 @@ body {
 
 .Netflix__Thumbnails__Movie.Magic {
   background-image: url("../assets/movie-images/magic.jpg");
+}
+
+.Netflix__Thumbnail--information {
+  top: 10%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.Netflix__Thumbnail__Header {
+  position: relative;
+}
+
+.Netflix__Thumbnail__Header > img {
+  height: 22px;
+  width: 22px;
+  margin-left: 0.7px;
+}
+
+.Netflix__Thumbnail__Header > p {
+  height: 19px;
+  width: 145px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 19px;
+  margin-top: 0;
+}
+.Netflix__Thumbnail__Match {
+  margin-top: 0;
+}
+
+.Netflix__Thumbnail__Match > span {
+  margin-right: 6px;
+}
+
+.Netflix__Thumbnail__Match > span.Match {
+  color: #46d36a;
+  height: 17px;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  line-height: 17px;
+}
+
+.Netflix__Thumbnail__Match > span.Rate {
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  margin-right: 7px;
+  padding-left: 4px;
+}
+
+.Netflix__Thumbnail__Match > span.Rate > span {
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+  padding: 5x 4px;
+}
+
+.Netflix__Thumbnail__Match > span.Duration {
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  line-height: 17px;
+}
+
+.Netflix__Thumbnail__Description > p {
+  height: 90px;
+  width: 196px;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 .Netflix__Thumbnail__Movie--progress {
