@@ -594,11 +594,11 @@ body {
   letter-spacing: 0.25px;
   line-height: 16px;
   margin-bottom: 15px;
-  transition: border-bottom 0.2s ease;
+  transition: text-decoration 0.2s ease;
 }
 
 .Netflix__Footer__Links--column > a:hover {
-  border-bottom: 1px solid #7f7f7f;
+  text-decoration: underline;
 }
 
 .Netflix__Footer__Links--column > a:last-child {
