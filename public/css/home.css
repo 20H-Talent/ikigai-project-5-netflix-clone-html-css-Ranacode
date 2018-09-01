@@ -28,6 +28,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .Netflix__Navbar .Netflix__Menu--right {
@@ -552,8 +553,69 @@ body {
   height: 246px;
   width: 849px;
   color: #7f7f7f;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
+.Netflix__Footer .Netflix__Footer__Social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 17px;
+}
+
+.Netflix__Footer__Social > img:first-child {
+  margin-right: 26px;
+}
+
+.Netflix__Footer__Social > img[alt="instagram_icon"] {
+  margin-right: 25px;
+}
+
+.Netflix__Footer__Social > img[alt="twitter_icon"] {
+  margin-right: 19.01px;
+}
+
+.Netflix__Footer__Links {
+  margin-bottom: 77px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Netflix__Footer__Links--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Netflix__Footer__Links--column > a {
+  text-decoration: none;
+  color: #7f7f7f;
+  height: 16px;
+  width: 105px;
+  font-size: 13px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  margin-bottom: 15px;
+  transition: border-bottom 0.2s ease;
+}
+
+.Netflix__Footer__Links--column > a:hover {
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.Netflix__Footer__Links--column > a:last-child {
+  margin-bottom: 0;
+}
+
+.Netflix__Footer__Links .Netflix__Footer__Links--column:last-child > a {
+  letter-spacing: -0.26px;
+}
+
+.Netflix__Footer__Copyright {
+  height: 17px;
+  width: 116px;
+  font-size: 14px;
+  letter-spacing: 0.11px;
+  line-height: 17px;
+}
 @media screen and (min-width: 768px) {
 }
 
