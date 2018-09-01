@@ -246,7 +246,6 @@ body {
 
 .Netflix__Originals {
   font-family: Helvetica, Arial, sans-serif;
-  max-height: 468px;
   margin-top: -198px;
   z-index: 2;
 }
@@ -542,6 +541,17 @@ body {
 
 .Netflix__Thumbnail__Movie--progress progress::-moz-progress-bar {
   background-color: #b3212c;
+}
+
+.no-progress {
+  display: none;
+}
+
+.Netflix__Footer {
+  margin: 146.31px 362px 35px 229px;
+  height: 246px;
+  width: 849px;
+  color: #7f7f7f;
 }
 
 @media screen and (min-width: 768px) {
