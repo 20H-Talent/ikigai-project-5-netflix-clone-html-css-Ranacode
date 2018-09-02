@@ -31,11 +31,16 @@ body {
   z-index: 10;
 }
 
+.Netflix__Navbar.search-page {
+  margin-bottom: 77px;
+}
+
 .Netflix__Navbar .Netflix__Menu--right {
   display: flex;
 }
 
-.Netflix__Navbar .Netflix__Menu--right > img {
+.Netflix__Navbar .Netflix__Menu--right > img,
+.Netflix__Navbar .Netflix__Menu--right > a {
   margin: 22px 0 21.14px 58px;
 }
 
