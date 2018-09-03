@@ -3595,6 +3595,15 @@
             &copy; 2018 Netflix inc.
         </p>
     </footer>
+
+    <script>
+        const searchImg = document.querySelector('img[contenteditable]');
+        const form = searchImg.nextElementSibling;
+
+        searchImg.addEventListener('click', function (e) {
+            form.querySelector('input[type=search]').focus();
+        });
+    </script>
 </body>
 
 </html>
